@@ -13,11 +13,8 @@
 </head>
 <body>
 <div class="container" id="root">
-
-    <message title="message" body="lorem ipsum"></message>
-    <message title="hello universe" body="I don't care"></message>
-
-
+   <modal v-show="showModal" @close="showModal=false"></modal>
+    <button @click="showModal=true ">Show Modal</button>
 
 </div>
 
