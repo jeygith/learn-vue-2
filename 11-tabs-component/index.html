@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title-is-me</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container" id="root">
+    <!--
+        <ul id="tabs">
+            <li><a href="#">About</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About our culture</a></li>
+            <li><a href="#">B</a></li>
+        </ul>
+    -->
+
+    <tabs>
+        <tab name="About us" :selected="true">
+            <h1>Here is the content for the about us tab</h1>
+        </tab>
+        <tab name="About our culture">
+            <h1>Here is the content for the about our culture tab</h1>
+        </tab>
+        <tab name="About our vision">
+            <h1>Here is the content for the about our vision tab</h1>
+        </tab>
+    </tabs>
+</div>
+
+
+
+<script src="https://unpkg.com/vue"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
