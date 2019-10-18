@@ -3,7 +3,7 @@ Vue.component('coupon', {
 
     methods: {
         onCouponApplied() {
-            console.log('component says: applied');
+            console.log('component says:   applied');
             this.$emit('applied')
         }
     }
