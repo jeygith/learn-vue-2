@@ -3,7 +3,7 @@ Vue.component('coupon', {
 
     methods: {
         onCouponApplied() {
-            console.log('applied');
+            console.log('component says: applied');
             this.$emit('applied')
         }
     }
@@ -17,7 +17,7 @@ new Vue({
     },
     methods: {
         onCouponApplied() {
-            console.log('coupon applied');
+            console.log('parent says: coupon applied');
             this.couponApplied = true;
         }
     }
