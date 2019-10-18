@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title-is-me</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container" id="root">
+
+    <progress-view inline-template>
+        <div>
+        <h1>Your progress through this course is {{completionRate   }}%</h1>
+        <p><button @click="completionRate +=10">Update Completion Rate </button></p>
+        </div>
+    </progress-view>
+</div>
+
+
+<script src="https://unpkg.com/vue"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
